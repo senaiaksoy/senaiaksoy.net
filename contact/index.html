@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/apple-touch-icon.png" sizes="192x192">
+    <title>Dr. Senai Aksoy</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        body {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: #f1f1f1;
+        }
+
+        a,
+        a:visited,
+        a:active {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            text-underline-offset: 1px;
+        }
+
+        #cv {
+            width: 100%;
+            max-width: 360px;
+            min-width: 320px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .info {
+            padding: 1rem 0;
+        }
+
+        .links {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .links li {
+            list-style-type: none;
+            padding: 0 1rem;
+        }
+
+        .links li a {
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            margin-bottom: .5rem;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            transition: all .2s;
+        }
+
+        .links li a:hover,
+        .links li a:focus {
+            background-color: #e7e7e7;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .links li a span {
+            display: block;
+            color: #0096c7;
+            padding: .25rem;
+            font-size: .75rem;
+            font-weight: 700;
+            border-radius: 4px;
+            margin-right: .5rem;
+        }
+
+        .links li a.web {
+            background-color: transparent;
+            padding: .5rem 0;
+        }
+
+        .links li a.web span {
+            color: #555;
+        }
+
+        .links li a.web:first-child {
+            margin-top: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="cv">
+            <header>
+                <img src="logo.png" alt="Dr. Senai Aksoy" width="224" height="60" />
+            </header>
+
+            <div class="info">
+                <ul class="links">
+                    <li>
+                        <a href="mailto:sa@senaiaksoy.net">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24"
+                                    height="24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </span>
+                            sa@senaiaksoy.net</a>
+                    </li>
+                    <li>
+                        <a href="tel:+905532777722">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </span>
+                            +90 553 277 77 22</a>
+                    </li>
+                    <li>
+                        <a
+                            href="whatsapp://send?text=Merhaba, tüpbebek tedavisi hakkında bilgi almak istiyorum.&amp;phone=+905326136905&amp;abid=+905326136905">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </span>
+                            +90 532 613 69 05</a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/WV6YKdPn9xm6KND69">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24"
+                                    height="24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </span>
+                            Yol Tarifi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.draksoyivf.com" title="Dr. Aksoy IVF" class="web">
+                            <span>EN</span>
+                            https://www.draksoyivf.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tupbebek.com" title="Tüpbebek" class="web">
+                            <span>TR</span>
+                            https://www.tupbebek.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.draksoyivf.com/fr" title="Dr. Aksoy IVF" class="web">
+                            <span>FR</span>
+                            https://www.draksoyivf.com/fr
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.draksoyivf.com/ar" title="Dr. Aksoy IVF" class="web">
+                            <span>AR</span>
+                            https://www.draksoyivf.com/ar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

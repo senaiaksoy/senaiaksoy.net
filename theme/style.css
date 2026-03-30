@@ -1,0 +1,278 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+body {
+  color: black;
+  background: white;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clear {
+  display: inline-block;
+}
+/* required comment for clearfix to work in Opera \*/
+* html .clear {
+  height: 1%;
+}
+.clear {
+  display: block;
+}
+/* end clearfix */
+body {
+  background: #dfdfdf url(bg.jpg) 0 0 repeat;
+  font:
+    normal 13px/20px Arial,
+    Helvetica,
+    Verdana,
+    sans-serif;
+  padding-block: 2em;
+}
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #0a75a1;
+  outline: 0;
+  font-weight: bold;
+}
+a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+strong {
+  font-weight: bold;
+}
+p {
+  padding: 5px 0;
+}
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+  font-weight: bold;
+  padding: 10px 0;
+}
+#intro {
+  position: relative;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 480px;
+  margin: 1em auto 0 auto;
+}
+.languages {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  top: -24px;
+  right: 12px;
+  width: 112px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image: linear-gradient(#fff, #efefef 90%);
+}
+
+.language a {
+  display: block;
+  padding: 3px 0 0 32px;
+  background: transparent url(fr.png) 6px center no-repeat;
+  font-size: 12px;
+}
+
+.language.en a {
+  background: transparent url(en.png) 6px center no-repeat;
+}
+
+.language.tr a {
+  background: transparent url(tr.png) 6px center no-repeat;
+}
+
+.logo {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.bio {
+  min-height: 200px;
+  border-bottom: 5px solid #dfdfdf;
+  background: url(sa.png) left bottom no-repeat;
+}
+.bio p {
+  padding: 40px 25px 15px 125px;
+}
+ul {
+  width: 100%;
+}
+ul li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 12px 25px;
+  border-top: 1px solid #dfdfdf;
+}
+ul li.social {
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 0;
+}
+li a {
+  display: block;
+}
+li.social a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background-image: url(icons.png);
+  background-position: 0 0;
+  margin-right: 10px;
+}
+a#facebook {
+  background-position: 0 -24px;
+}
+a#twitter {
+  background-position: 0 -48px;
+}
+a#vimeo {
+  background-position: 0 -72px;
+}
+a#youtube {
+  background-position: 0 -96px;
+}
+a#more {
+  font-size: 11px;
+}
+#intro > ul > li {
+  padding: 0;
+}
+#intro > ul > li > div {
+  padding: 0.5em 1em;
+}
+#intro h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  background: #f2f2f2;
+  padding: 8px 16px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.app a {
+  display: inline;
+}
+
+@media only screen and (max-width: 415px) {
+  #intro,
+  .reveal-modal {
+    width: 100%;
+  }
+  .reveal-modal {
+    left: 0;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
