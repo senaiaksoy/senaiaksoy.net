@@ -1,0 +1,44 @@
+---
+---
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="inner">
+    <p>
+      Bu web sitesi deneyiminizi iyileştirmek için çerezler kullanmaktadır.
+      <a href="/cerez-politikasi">Çerez Politikası</a>
+    </p>
+    <div class="cookie-actions">
+      <button class="btn-decline" id="cookie-decline">Reddet</button>
+      <button class="btn-accept" id="cookie-accept">Kabul Et</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const banner = document.getElementById('cookie-banner')!;
+  const acceptBtn = document.getElementById('cookie-accept')!;
+  const declineBtn = document.getElementById('cookie-decline')!;
+
+  if (!localStorage.getItem('cookie-consent')) {
+    banner.classList.add('active');
+  }
+
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.classList.remove('active');
+    // GA yükle
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LT5CQ05S1E';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: any[]) { window.dataLayer.push(args); }
+    gtag('js', new Date());
+    gtag('config', 'G-LT5CQ05S1E');
+  });
+
+  declineBtn.addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'declined');
+    banner.classList.remove('active');
+  });
+</script>

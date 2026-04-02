@@ -1,0 +1,19 @@
+---
+const pathname = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="logo-link">
+      <img src="/theme/logo.png" alt="Dr. Senai Aksoy" />
+    </a>
+    <nav class="site-nav">
+      <a href="/" class:list={[{ active: pathname === '/' }]}>Ana Sayfa</a>
+      <a href="/contact" class:list={[{ active: pathname.startsWith('/contact') }]}>İletişim</a>
+      <span class="nav-divider"></span>
+      <a href="https://draksoyivf.com" title="English" target="_blank" rel="noopener">EN</a>
+      <a href="https://draksoyivf.com/fr" title="Français" target="_blank" rel="noopener">FR</a>
+      <a href="https://draksoyivf.com/ar" title="العربية" target="_blank" rel="noopener">AR</a>
+    </nav>
+  </div>
+</header>

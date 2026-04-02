@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import BioModal from '../components/BioModal.astro';
+---
+
+<Layout title="Dr. Senai Aksoy - Kadın Hastalıkları ve Doğum Uzmanı">
+  <section class="hero">
+    <img src="/theme/sa-office-opt.jpg" alt="Doç. Dr. Senai Aksoy" class="photo" />
+    <h1 class="doctor-name">Doç. Dr. Senai Aksoy</h1>
+    <p class="doctor-title">Kadın Hastalıkları ve Doğum Uzmanı</p>
+
+    <p class="bio-text">
+      Üreme sağlığı ve infertilite alanında uzmanlaşmış kadın hastalıkları
+      ve doğum hekimiyim. Tüp bebek (IVF) tedavileri, jinekolojik laparoskopik
+      cerrahi ve jinekolojik-obstetrikal ultrasonografi alanlarında hizmet
+      vermekteyim.
+    </p>
+
+    <a href="#" class="more-link open-bio">Özgeçmiş &rarr;</a>
+  </section>
+
+  <SocialLinks />
+
+  <ContactInfo />
+
+  <div class="glass-card">
+    <div class="info-section">
+      <h2 class="section-title">Editör</h2>
+      <div class="info-value">
+        Doç. Dr. Senai Aksoy — <a href="https://tupbebek.com/dr-senai-aksoy/" target="_blank" rel="noopener">tupbebek.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="certificates">
+    <img src="/theme/healthturkiye.svg" alt="Health Türkiye" />
+    <a href="/theme/sa-certificate.jpg" target="_blank">
+      <img src="/theme/sa-certificate.jpg" alt="Sağlık Turizmi Yetki Belgesi" />
+    </a>
+  </div>
+
+  <BioModal />
+</Layout>

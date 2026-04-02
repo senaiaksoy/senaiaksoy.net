@@ -1,0 +1,80 @@
+---
+---
+
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal" id="bio-modal">
+  <button class="close-modal" aria-label="Kapat">&times;</button>
+  <h1>Dr. Senai Aksoy</h1>
+  <div class="academic-links">
+    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Aksoy%2C+Senai%5BAuthor%5D" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/PubMed-326599?style=for-the-badge&logo=pubmed&logoColor=white" alt="PubMed" />
+    </a>
+    <a href="https://orcid.org/my-orcid?orcid=0000-0003-4110-5290" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
+    </a>
+    <a href="https://scholar.google.com/scholar?hl=tr&as_sdt=0%2C5&q=senai+aksoy&oq=" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" />
+    </a>
+    <a href="https://amerikanhastanesi.academia.edu/SenaiAksoy" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/Academia.edu-41454A?style=for-the-badge&logo=academia&logoColor=white" alt="Academia" />
+    </a>
+    <a href="https://www.linkedin.com/in/senai-aksoy-bba69b36/" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+  </div>
+  <p>
+    Amerikan Hastanesi Tüp Bebek Bölümünün kurucularından olan Doç.Dr Senai
+    Aksoy, kısırlık ve yardımcı üreme teknikleri alanında uzmandır.
+  </p>
+  <p>
+    Doç.Dr. Senai Aksoy, 1962 yılında Ankara'da doğdu. İzmir Atatürk
+    Lisesi'nden 1979 yılında mezun oldu.
+  </p>
+  <p>
+    1985'te Cerrahpaşa Tıp Fakültesi'nden mezun olduktan sonra, ihtisasını
+    Fransa'da Franche-Comté Üniversitesi'nde Kadın Hastalıkları ve Doğum
+    konusunda yaptı. 1993 yılından bu yana Kadın Hastalıkları ve Doğum
+    uzmanı olarak çalışmaktadır.
+  </p>
+  <p>
+    Fransa'da çalışmalarını 1994'e kadar sürdüren Dr. Senai Aksoy, Clermont
+    Ferrand Üniversitesi'nden Jinekolojik Laparoskopik Cerrahi diploması ve
+    Strasburg Louis Pasteur Üniversitesi'nden Jinekolojik ve Obstetrikal
+    Ultrason diploması aldı.
+  </p>
+  <p>
+    Paris Rene Descart Üniversitesi'nden de Üreme Sağlığı ve Yardımcı Üreme
+    Teknikleri diploması alan Doç.Dr. Senai Aksoy, 1994'te Türkiye'ye
+    dönerek Ankara Sevgi Hastanesi Tüp Bebek ve Kısırlık Bölümü'nde
+    mikroenjeksiyonu (ICSI) uygulayan ilk ekibin içinde yer aldı.
+  </p>
+  <p>
+    1996'da İstanbul'a gelerek Amerikan Hastanesi'nde Tüp Bebek Ünitesi'nin
+    kurucu ekibinde yer aldı.
+  </p>
+</div>
+
+<script>
+  const overlay = document.getElementById('modal-overlay')!;
+  const modal = document.getElementById('bio-modal')!;
+  const closeBtn = modal.querySelector('.close-modal')!;
+  const openBtns = document.querySelectorAll('.open-bio');
+
+  function openModal(e: Event) {
+    e.preventDefault();
+    overlay.classList.add('active');
+    modal.classList.add('active');
+  }
+
+  function closeModal() {
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+  }
+
+  openBtns.forEach(btn => btn.addEventListener('click', openModal));
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>

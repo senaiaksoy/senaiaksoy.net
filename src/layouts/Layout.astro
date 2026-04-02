@@ -1,0 +1,53 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Dr. Senai Aksoy - Kadın Hastalıkları ve Doğum Uzmanı" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="all" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preload" as="font" href="/fonts/inter.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="/fonts/playfair.woff2" type="font/woff2" crossorigin />
+    <title>{title}</title>
+
+    <!-- Google Analytics - yalnızca onay verildiğinde yüklenir -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+
+      if (localStorage.getItem('cookie-consent') === 'accepted') {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LT5CQ05S1E';
+        document.head.appendChild(s);
+        gtag('js', new Date());
+        gtag('config', 'G-LT5CQ05S1E');
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <CookieBanner />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

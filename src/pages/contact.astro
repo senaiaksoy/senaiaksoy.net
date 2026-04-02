@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+---
+
+<Layout title="İletişim - Dr. Senai Aksoy" description="Dr. Senai Aksoy İletişim Bilgileri - Adres, Telefon, Randevu">
+  <section class="hero" style="padding-bottom: 0;">
+    <h1 class="doctor-name">İletişim</h1>
+    <p class="doctor-title">Doç. Dr. Senai Aksoy Muayenehanesi</p>
+  </section>
+
+  <ContactInfo />
+
+  <!-- Harita -->
+  <div class="glass-card">
+    <div class="info-section">
+      <h2 class="section-title">Konum</h2>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.0!2d28.9875!3d41.0525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLotus+Ni%C5%9Fanta%C5%9F%C4%B1+Halaskargazi+Cd.+No%3A+38-66+%C5%9Ei%C5%9Fli!5e0!3m2!1str!2str!4v1"
+          width="100%"
+          height="300"
+          style="border:0; border-radius: 0.75rem;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Muayenehane Konumu">
+        </iframe>
+      </div>
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=Lotus+Nişantaşı+Halaskargazi+Cd.+No:38-66+Şişli+İstanbul"
+        class="directions-btn"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="directions-icon">&#10148;</span>
+        Yol Tarifi Al
+      </a>
+    </div>
+  </div>
+
+  <!-- Ulaşım -->
+  <div class="glass-card">
+    <div class="info-section">
+      <h2 class="section-title">Ulaşım</h2>
+      <div class="transport-grid">
+        <div class="transport-item">
+          <div class="transport-icon">M</div>
+          <div>
+            <strong>Metro</strong>
+            <p>Osmanbey veya Şişli-Mecidiyeköy istasyonları</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <div class="transport-icon">B</div>
+          <div>
+            <strong>Otobüs</strong>
+            <p>Halaskargazi Caddesi üzerindeki duraklar</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <div class="transport-icon">P</div>
+          <div>
+            <strong>Otopark</strong>
+            <p>Lotus Nişantaşı binası kapalı otoparkı</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Randevu Bilgisi -->
+  <div class="glass-card">
+    <div class="info-section">
+      <h2 class="section-title">Randevu</h2>
+      <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text);">
+        Muayene randevusu almak için aşağıdaki kanallardan bize ulaşabilirsiniz:
+      </p>
+      <div class="appointment-options">
+        <a href="tel:+905532777722" class="appointment-btn phone">
+          <span class="apt-icon">T</span>
+          <span>
+            <strong>Telefon</strong>
+            <small>+90 553 277 77 22</small>
+          </span>
+        </a>
+        <a href="https://wa.me/905532777722" class="appointment-btn whatsapp" target="_blank" rel="noopener">
+          <span class="apt-icon">W</span>
+          <span>
+            <strong>WhatsApp</strong>
+            <small>+90 553 277 77 22</small>
+          </span>
+        </a>
+        <a href="mailto:dr@senaiaksoy.net" class="appointment-btn email">
+          <span class="apt-icon">@</span>
+          <span>
+            <strong>E-posta</strong>
+            <small>dr@senaiaksoy.net</small>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sosyal Medya -->
+  <div class="glass-card" style="text-align: center;">
+    <div class="info-section">
+      <h2 class="section-title">Sosyal Medya</h2>
+      <div style="display: flex; justify-content: center;">
+        <SocialLinks />
+      </div>
+    </div>
+  </div>
+
+  <!-- Sertifikalar -->
+  <div class="certificates">
+    <img src="/theme/healthturkiye.svg" alt="Health Türkiye" />
+    <a href="/theme/sa-certificate.jpg" target="_blank">
+      <img src="/theme/sa-certificate.jpg" alt="Sağlık Turizmi Yetki Belgesi" />
+    </a>
+  </div>
+</Layout>
