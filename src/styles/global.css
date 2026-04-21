@@ -883,3 +883,81 @@ main {
     text-align: center;
   }
 }
+
+/* --- International Patients --- */
+.site-header .site-nav a.intl-patients-link {
+  color: var(--color-brand-secondary);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.site-header .site-nav a.intl-patients-link:hover {
+  color: var(--color-brand-primary);
+  background: rgba(216, 32, 151, 0.06);
+}
+
+.glass-card.intl-patients-card {
+  text-align: left;
+}
+
+.glass-card.intl-patients-card .section-title {
+  color: var(--color-brand-secondary);
+}
+
+.glass-card.intl-patients-card .info-value {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-medium);
+}
+
+a.intl-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-medium);
+  padding: 0.75rem 1.25rem;
+  background: var(--color-brand-secondary);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+a.intl-visit-btn:hover {
+  background: var(--color-brand-primary);
+  transform: translateY(-1px);
+}
+
+/* --- Footer additions --- */
+.site-footer .footer-editor {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  margin-top: var(--spacing-small, 0.5rem);
+  line-height: 1.6;
+}
+
+.site-footer .footer-editor a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.site-footer .footer-editor a:hover {
+  color: #fff;
+}
+
+/* --- Certificate number text --- */
+.certificate-no {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-gray-80);
+  margin-top: var(--spacing-small, 0.5rem);
+  margin-bottom: var(--spacing-medium);
+}
+
+.certificate-no strong {
+  color: var(--color-text);
+  letter-spacing: 0.03em;
+}
