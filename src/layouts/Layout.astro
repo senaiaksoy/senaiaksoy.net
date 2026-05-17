@@ -23,6 +23,85 @@ const { title, description = "Dr. Senai Aksoy - Kadın Hastalıkları ve Doğum 
     <link rel="preload" as="font" href="/fonts/playfair.woff2" type="font/woff2" crossorigin />
     <title>{title}</title>
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://senaiaksoy.net/#website",
+          "url": "https://senaiaksoy.net/",
+          "name": "Doç. Dr. Senai Aksoy",
+          "inLanguage": "tr-TR",
+          "publisher": { "@id": "https://senaiaksoy.net/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://senaiaksoy.net/#person",
+          "name": "Doç. Dr. Senai Aksoy",
+          "givenName": "Senai",
+          "familyName": "Aksoy",
+          "honorificPrefix": "Doç. Dr.",
+          "jobTitle": "Üreme Endokrinolojisi ve İnfertilite Uzmanı",
+          "description": "Doç. Dr. Senai Aksoy — kadın hastalıkları, doğum ve üreme tıbbı uzmanı. Sevgi Hospital'in kurucu ICSI ekibi üyesi (1994-95), 30+ yıl deneyim.",
+          "url": "https://senaiaksoy.net/",
+          "email": "dr@senaiaksoy.net",
+          "telephone": "+90-553-277-77-22",
+          "knowsLanguage": ["tr", "fr", "en", "ar"],
+          "sameAs": [
+            "https://orcid.org/0000-0003-4110-5290",
+            "https://www.linkedin.com/in/senai-aksoy-bba69b36/",
+            "https://www.youtube.com/@DocentDrSenaiAksoy",
+            "https://www.youtube.com/@SenaiAksoy",
+            "https://draksoyivf.com/",
+            "https://tupbebek.com/",
+            "https://estranova.com/"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "TR-Tabip-Sicil",
+            "value": "39159"
+          },
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Türkiye Cumhuriyeti Tabip Sicil No",
+              "credentialCategory": "license",
+              "identifier": "39159",
+              "recognizedBy": { "@type": "Organization", "name": "Türk Tabipleri Birliği" }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Uluslararası Sağlık Turizmi Yetki Belgesi",
+              "credentialCategory": "license",
+              "identifier": "ST-1008",
+              "recognizedBy": { "@type": "GovernmentOrganization", "name": "T.C. Sağlık Bakanlığı" }
+            }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90-553-277-77-22",
+            "email": "dr@senaiaksoy.net",
+            "contactType": "patient inquiries",
+            "availableLanguage": "Turkish"
+          },
+          "workLocation": {
+            "@type": "Hospital",
+            "@id": "https://senaiaksoy.net/#lotus-hospital",
+            "name": "Lotus Nişantaşı Hospital",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Halaskargazi Cad. No:38-66, Kat:5, Ofis:92",
+              "postalCode": "34371",
+              "addressLocality": "Şişli",
+              "addressRegion": "İstanbul",
+              "addressCountry": "TR"
+            }
+          }
+        }
+      ]
+    })} />
+
+
     <!-- Google Analytics - yalnızca onay verildiğinde yüklenir -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
