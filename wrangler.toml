@@ -1,0 +1,6 @@
+# Cloudflare Pages project configuration
+# https://developers.cloudflare.com/pages/configuration/wrangler-configuration/
+
+name = "senaiaksoy-net"
+compatibility_date = "2025-06-01"
+pages_build_output_dir = "dist"

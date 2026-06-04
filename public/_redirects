@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects
+# Language-specific routes → draksoyivf.com (legal compliance: SB 2025 Madde 8)
+/en   https://draksoyivf.com/   301
+/en/* https://draksoyivf.com/   301
+/fr   https://draksoyivf.com/fr 301
+/fr/* https://draksoyivf.com/fr 301
+/ar   https://draksoyivf.com/ar 301
+/ar/* https://draksoyivf.com/ar 301

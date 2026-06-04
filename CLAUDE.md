@@ -111,6 +111,30 @@ Yeni sayfa eklenecekse:
 - `/uzmanlik-alanlari` (opsiyonel), `/hakkimda` (opsiyonel) gibi bilgilendirme sayfaları uygun
 - Blog, tedaviler, fiyat, vaka, referans gibi sayfalar **eklenmez**
 
+### Hosting & Deployment
+
+- **Platform:** Cloudflare Pages
+- **Proje adı:** `senaiaksoy-net`
+- **Cloudflare Account ID:** `4797b38bf5bfb1b15a30ac27f0a9a78f`
+- **Zone ID (senaiaksoy.net):** `465567b308c956d9d717f2f5294e6e9b`
+- **Production URL:** `https://senaiaksoy.net`
+- **Pages URL:** `https://senaiaksoy-net.pages.dev`
+- **Build output:** `dist/`
+
+**Cloudflare-specific dosyalar:**
+- `wrangler.toml` — Pages proje yapılandırması
+- `public/_redirects` — Dil yönlendirmeleri (`/en`, `/fr`, `/ar` → draksoyivf.com), Cloudflare edge'de çalışır
+- `public/_headers` — Güvenlik başlıkları (CSP, X-Frame-Options, XSS) + cache stratejisi
+
+**DNS yapılandırması:**
+- `senaiaksoy.net` → CNAME → `senaiaksoy-net.pages.dev` (Proxied)
+- `www.senaiaksoy.net` → CNAME → `senaiaksoy-net.pages.dev` (Proxied)
+
+**Deploy komutu:**
+```bash
+npm run build && npx wrangler pages deploy dist --project-name senaiaksoy-net --commit-dirty=true
+```
+
 ---
 
 ## 5. International Patients yönlendirme kuralları
