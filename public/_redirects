@@ -1,4 +1,7 @@
 # Cloudflare Pages redirects
+# Tekil kanonik host: www → apex (Google'ın "Yönlendirmeli sayfa" kopya sorununu önler)
+https://www.senaiaksoy.net/*  https://senaiaksoy.net/:splat  301
+
 # Language-specific routes → draksoyivf.com (legal compliance: SB 2025 Madde 8)
 /en   https://draksoyivf.com/   301
 /en/* https://draksoyivf.com/   301
