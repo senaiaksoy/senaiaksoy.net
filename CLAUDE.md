@@ -11,6 +11,12 @@ Bu site **Doç. Dr. Senai Aksoy**'un Türkiye'deki resmi hekim kimlik sayfasıd�
 
 > **Knowledge backend:** Editöryal kurallar, marka kimliği ve tıbbi referans tabanı ayrı bir Obsidian vault'ta (`D:\A-klasör\obsidian-vaults\draksoyivf-knowledge`) tutulur. Çelişki durumunda **vault kazanır**.
 
+> **Dr. Senai Aksoy makale stili:** Canonical rehber
+> `D:\A-klasör\obsidian-vaults\draksoyivf-knowledge\wiki\brand\senai-aksoy-makale-stil-rehberi.md`
+> dosyasındadır. Bu site makale/blog yayınlamaz; rehber burada yalnızca kısa
+> kimlik, yasal ve iletişim metinlerini sadeleştirme/humanize etme sınırında
+> uygulanır.
+
 ---
 
 ## 1. Site kapsamı (HARD CONSTRAINT)
