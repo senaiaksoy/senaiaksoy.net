@@ -11,11 +11,15 @@ Bu site **Doç. Dr. Senai Aksoy**'un Türkiye'deki resmi hekim kimlik sayfasıd�
 
 > **Knowledge backend:** Editöryal kurallar, marka kimliği ve tıbbi referans tabanı ayrı bir Obsidian vault'ta (`D:\A-klasör\obsidian-vaults\draksoyivf-knowledge`) tutulur. Çelişki durumunda **vault kazanır**.
 
-> **Dr. Senai Aksoy makale stili:** Canonical rehber
+> **Makale preflight — HARD GATE:** Bu site makale/blog yayınlamaz. Kullanıcı
+> bu repoda makale/blog isterse üretime başlamadan dur; içeriğin konu ve dile göre
+> tupbebek.com, estranova.com veya draksoyivf.com tarafına alınması gerektiğini
+> söyle. Kısa kimlik, yasal veya iletişim metni humanize edilecekse önce canonical
+> rehberi oku:
 > `D:\A-klasör\obsidian-vaults\draksoyivf-knowledge\wiki\brand\senai-aksoy-makale-stil-rehberi.md`
-> dosyasındadır. Bu site makale/blog yayınlamaz; rehber burada yalnızca kısa
-> kimlik, yasal ve iletişim metinlerini sadeleştirme/humanize etme sınırında
-> uygulanır.
+> Okuduktan sonra aynen şunu yaz:
+> `Stil rehberi okundu: Dr. Senai Aksoy Makale Stil Rehberi`
+> Dosya okunamıyorsa hafızadan veya önceki oturumdan devam etme; engeli bildir.
 
 ---
 
