@@ -9,3 +9,12 @@ https://www.senaiaksoy.net/*  https://senaiaksoy.net/:splat  301
 /fr/* https://draksoyivf.com/fr 301
 /ar   https://draksoyivf.com/ar 301
 /ar/* https://draksoyivf.com/ar 301
+
+# /tr — eski kalıntı, ana sayfaya yönlendir (GSC "alternatif sayfa" sorununu çözer)
+/tr   /   301
+/tr/* /   301
+
+# Catch-all — unknown paths → 404
+# Cloudflare Pages: _redirects rules fire only for paths without a matching static file,
+# so valid pages (/, /contact, etc.) are unaffected.
+/*    /404.html   404

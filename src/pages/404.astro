@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sayfa Bulunamadı (404) - Dr. Senai Aksoy">
+  <div class="not-found">
+    <h1>404</h1>
+    <p class="nf-title">Sayfa Bulunamadı</p>
+    <p class="nf-text">
+      Aradığınız sayfa mevcut değil veya taşınmış olabilir.
+    </p>
+    <a href="/" class="nf-home">Ana Sayfaya Dön</a>
+  </div>
+</Layout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+  }
+
+  .not-found h1 {
+    font-family: var(--font-secondary);
+    font-size: 5rem;
+    color: var(--color-brand-primary);
+    margin-bottom: var(--spacing-small);
+    font-weight: 700;
+  }
+
+  .nf-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .nf-text {
+    color: var(--color-gray-80);
+    margin-bottom: var(--spacing-big);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nf-home {
+    display: inline-block;
+    background: var(--color-brand-primary);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  .nf-home:hover {
+    opacity: 0.9;
+  }
+</style>
