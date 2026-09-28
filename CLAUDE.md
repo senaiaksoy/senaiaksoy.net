@@ -7,6 +7,15 @@ last-updated: 2026-04-21
 
 # senaiaksoy.net — Proje Anayasası
 
+## Humanize komutu — kimlik sitesi kapsamı
+
+- `humanize` komutunda modelden bağımsız olarak `C:\Users\KC3\.codex\skills\senai-humanize\SKILL.md` dosyasını oku; kanonik stil rehberi preflight'ını uygula. Skill okunamıyorsa engeli bildir; hafızadan veya genel humanizer yaklaşımıyla devam etme.
+- Hedef kimlik, biyografi, iletişim veya yasal metnin **tamamında kapsamlı inceleme ve gerekli düzenleme** yap: yapı, tekrar, paragraf akışı, gramer, doğal ifade ve hekim kimliğine uygun ses. Dar düzenleme yalnızca kullanıcı açıkça sınırlandırırsa uygulanır. `audit humanize` / `incele` ayrıca düzeltme yetkisi yoksa salt okunurdur.
+- Hukuki/olgusal anlamı, kimlikleri, kaynakları ve gerçek onay kayıtlarını koru. Deneyim, klinik yanıt, tarih veya onay uydurma. Humanize, başka sayfalara otomatik kapsam genişletmez; commit/push/deploy/yayın yetkisi vermez.
+- **Bu site makale/blog yayımlamaz.** Diğer yayın sitelerindeki “Dr. Aksoy'a en sık sorulan sorular” akışı burada makale veya tıbbi SSS oluşturma yetkisi değildir. Kısa kimlik/hukuk metnine bu bölüm eklenmez.
+- Ekosistem makale SSS kuralı ilgili yayın deposunda uygulanır: her cevap Dr. Aksoy'un gerçek yanıtından gelir; kayıtlı uygun yanıt tekrar istenmez, eksik cevap modelce tamamlanmaz. “En sık” nitelemesi doğrulanmamışsa “Dr. Aksoy'a sorular” başlığı kullanılır. Bu depodaki makale talebini konu/dile uygun yayın sitesine yönlendir.
+- Dedektör skoru kalite veya insan yazarlığı kanıtı değildir; sonuç garantisi verilmez.
+
 Bu site **Doç. Dr. Senai Aksoy**'un Türkiye'deki resmi hekim kimlik sayfasıdır. **Bilinçli olarak minimal** tutulmuştur: amaç hem Sağlık Bakanlığı ve TTB mevzuatına katı uyum sağlamak, hem de sağlık turizmi sertifikalı hekim için zorunlu olan **yerel/uluslararası site ayrımını** temiz tutmaktır. Uluslararası hasta hizmetleri ayrı bir site üzerinden yürütülür: [draksoyivf.com](https://draksoyivf.com) (EN/FR/AR).
 
 > **Knowledge backend:** Editöryal kurallar, marka kimliği ve tıbbi referans tabanı ayrı bir Obsidian vault'ta (`D:\A-klasör\obsidian-vaults\draksoyivf-knowledge`) tutulur. Çelişki durumunda **vault kazanır**.
