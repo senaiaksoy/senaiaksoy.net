@@ -20,6 +20,8 @@ Bu site **Doç. Dr. Senai Aksoy**'un Türkiye'deki resmi hekim kimlik sayfasıd�
 
 > **Knowledge backend:** Editöryal kurallar, marka kimliği ve tıbbi referans tabanı ayrı bir Obsidian vault'ta (`D:\A-klasör\obsidian-vaults\draksoyivf-knowledge`) tutulur. Çelişki durumunda **vault kazanır**.
 
+> Vault’un Git deposu [senaiaksoy/Senai-Wiki](https://github.com/senaiaksoy/Senai-Wiki). Yerel yol bulunamazsa, durmadan önce [AGENTS.md erişim sırasını](AGENTS.md#obsidian-vault--senai-wiki-erişimi) uygula; aynı kanonik dosyayı yetkili GitHub erişimiyle oku.
+
 > **Makale preflight — HARD GATE:** Bu site makale/blog yayınlamaz. Kullanıcı
 > bu repoda makale/blog isterse üretime başlamadan dur; içeriğin konu ve dile göre
 > tupbebek.com, estranova.com veya draksoyivf.com tarafına alınması gerektiğini
